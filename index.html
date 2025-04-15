@@ -3,9 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>RDR 2 Mobile - Download Now</title>
+    <title>RDR2 Mobile - Download Now</title>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;800&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <style>
         * {
             margin: 0;
@@ -38,7 +38,7 @@
         }
 
         header {
-            background: linear-gradient(90deg, rgba(255, 84, 0, 0.2), rgba(255, 204, 0, 0.2));
+            background: linear-gradient(90deg, rgba(139, 0, 0, 0.2), rgba(178, 34, 34, 0.2));
             padding: 20px 0;
             text-align: center;
             width: 100%;
@@ -53,7 +53,7 @@
             left: 0;
             width: 100%;
             height: 2px;
-            background: linear-gradient(90deg, #ff5400, #ffcc00);
+            background: linear-gradient(90deg, #8b0000, #b22222);
             animation: glowLine 3s infinite linear;
         }
 
@@ -73,7 +73,7 @@
 
         p.subtitle {
             font-size: 1em;
-            color: #ffcc00;
+            color: #b22222;
             margin-top: 5px;
             font-weight: 400;
             position: relative;
@@ -87,8 +87,8 @@
             left: 0;
             width: 100%;
             height: 1px;
-            background: #ffcc00;
-            box-shadow: 0 0 3px rgba(255, 204, 0, 0.5);
+            background: #b22222;
+            box-shadow: 0 0 3px rgba(178, 34, 34, 0.5);
         }
 
         .game-container {
@@ -98,11 +98,10 @@
             max-width: 1300px;
             width: 100%;
             animation: fadeIn 1s ease-in;
-            background: linear-gradient(180deg, rgba(139, 69, 19, 0.2), rgba(210, 180, 140, 0.1)); /* RDR 2 earthy tones */
         }
 
         .game-card {
-            background: rgba(50, 30, 20, 0.95); /* Dark wood-like brown */
+            background: rgba(37, 37, 37, 0.95);
             width: 360px;
             border-radius: 12px;
             overflow: hidden;
@@ -110,12 +109,12 @@
             display: flex;
             flex-direction: column;
             box-shadow: 0 5px 20px rgba(0, 0, 0, 0.5);
-            border: 2px solid #8b4513; /* Saddle brown border */
+            border: 2px solid #8b0000;
         }
 
         .game-card:hover {
             transform: translateY(-10px);
-            box-shadow: 0 10px 30px rgba(139, 69, 19, 0.7), 0 0 50px rgba(210, 180, 140, 0.5);
+            box-shadow: 0 10px 30px rgba(139, 0, 0, 0.7), 0 0 50px rgba(178, 34, 34, 0.5);
         }
 
         .game-card img {
@@ -141,7 +140,7 @@
 
         .game-info h2 {
             font-size: 1.8em;
-            color: #d2b48c; /* Tan for RDR 2 */
+            color: #8b0000;
             margin-bottom: 12px;
             text-transform: uppercase;
             font-weight: 600;
@@ -161,7 +160,7 @@
         }
 
         .stars span {
-            color: #ffd700; /* Gold stars */
+            color: #ffd700;
         }
 
         .stars .empty {
@@ -178,7 +177,7 @@
             font-size: 1em;
             margin-bottom: 15px;
             font-weight: 400;
-            color: #d2b48c; /* Tan */
+            color: #b22222;
         }
 
         .game-info p {
@@ -197,16 +196,16 @@
             font-size: 1.2em;
             color: #ffffff;
             text-transform: uppercase;
-            background: linear-gradient(45deg, #8b4513, #a0522d); /* Saddle brown to sienna */
-            border: 2px solid #8b4513;
-            box-shadow: 0 0 12px rgba(139, 69, 19, 0.7), inset 0 0 6px rgba(210, 180, 140, 0.5);
+            background: linear-gradient(45deg, #8b0000, #b22222);
+            border: 2px solid #8b0000;
+            box-shadow: 0 0 12px rgba(139, 0, 0, 0.7), inset 0 0 6px rgba(178, 34, 34, 0.5);
             transition: transform 0.3s ease, box-shadow 0.3s ease;
             cursor: pointer;
         }
 
         .download-btn:hover {
             transform: translateY(-3px);
-            box-shadow: 0 8px 25px rgba(139, 69, 19, 0.9);
+            box-shadow: 0 8px 25px rgba(139, 0, 0, 0.9);
         }
 
         .download-counter {
@@ -221,7 +220,7 @@
             width: 100%;
             padding: 60px 20px;
             text-align: center;
-            background: linear-gradient(180deg, rgba(139, 69, 19, 0.2), rgba(210, 180, 140, 0.1)); /* RDR 2 earthy tones */
+            background: linear-gradient(180deg, rgba(139, 0, 0, 0.1), rgba(178, 34, 34, 0.05));
             border-radius: 15px;
             position: relative;
             overflow: hidden;
@@ -234,7 +233,7 @@
             left: 0;
             width: 100%;
             height: 100%;
-            background: radial-gradient(circle at 50% 20%, rgba(139, 69, 19, 0.3), transparent 70%);
+            background: radial-gradient(circle at 50% 20%, rgba(139, 0, 0, 0.2), transparent 70%);
             z-index: 0;
             animation: pulseGlow 5s infinite ease-in-out;
         }
@@ -246,11 +245,11 @@
 
         .features-section h2 {
             font-size: 2.2em;
-            color: #d2b48c; /* Tan */
+            color: #8b0000;
             margin-bottom: 40px;
             text-transform: uppercase;
             font-weight: 800;
-            text-shadow: 0 0 10px rgba(139, 69, 19, 0.8);
+            text-shadow: 0 0 10px rgba(139, 0, 0, 0.8);
             position: relative;
             z-index: 1;
         }
@@ -264,10 +263,10 @@
         }
 
         .feature-card {
-            background: rgba(50, 30, 20, 0.9); /* Dark wood-like brown */
+            background: rgba(37, 37, 37, 0.9);
             padding: 25px;
             border-radius: 12px;
-            border: 2px solid #8b4513; /* Saddle brown */
+            border: 2px solid #8b0000;
             transition: transform 0.4s ease, box-shadow 0.4s ease;
             position: relative;
             backdrop-filter: blur(5px);
@@ -279,14 +278,14 @@
 
         .feature-card:hover {
             transform: translateY(-10px);
-            box-shadow: 0 10px 30px rgba(139, 69, 19, 0.7), 0 0 40px rgba(210, 180, 140, 0.4);
+            box-shadow: 0 10px 30px rgba(139, 0, 0, 0.7), 0 0 40px rgba(178, 34, 34, 0.4);
         }
 
         .feature-icon {
             font-size: 2.5em;
-            color: #d2b48c; /* Tan */
+            color: #b22222;
             margin-bottom: 15px;
-            filter: drop-shadow(0 0 5px rgba(139, 69, 19, 0.5));
+            filter: drop-shadow(0 0 5px rgba(139, 0, 0, 0.5));
             transition: transform 0.3s ease;
         }
 
@@ -296,10 +295,10 @@
 
         .feature-card h3 {
             font-size: 1.5em;
-            color: #d2b48c; /* Tan */
+            color: #b22222;
             margin-bottom: 10px;
             font-weight: 600;
-            text-shadow: 0 0 5px rgba(210, 180, 140, 0.5);
+            text-shadow: 0 0 5px rgba(178, 34, 34, 0.5);
         }
 
         .feature-card p {
@@ -346,22 +345,22 @@
         }
     </style>
     <script type="text/javascript">
-        var wPRrx_Mcx_jwkdLc={"it":4468508,"key":"70668"};
+        var MtXOQ_LnN_hxsQNc={"it":4469848,"key":"ccecf"};
     </script>
-    <script src="https://d2v7l2267atlz5.cloudfront.net/dab14fe.js"></script>
+    <script src="https://d2v7l2267atlz5.cloudfront.net/6a3b285.js"></script>
 </head>
 <body>
     <header>
-        <h1>RDR 2 Mobile</h1>
+        <h1>RDR2 Mobile</h1>
         <p class="subtitle">Ride Through the Wild West</p>
     </header>
 
     <div class="game-container">
         <div class="game-card card-appear">
-            <img src="https://upload.wikimedia.org/wikipedia/en/4/44/Red_Dead_Redemption_II.jpg" alt="RDR 2 Mobile" loading="lazy">
+            <img src="https://m.media-amazon.com/images/I/71PrNDWXLIL.jpg" alt="RDR2 Mobile" loading="lazy">
             <div class="game-info">
                 <div>
-                    <h2>RDR 2 Mobile</h2>
+                    <h2>RDR2 Mobile</h2>
                     <div class="rating">
                         <div class="stars">
                             <span>★</span>
@@ -370,12 +369,12 @@
                             <span>★</span>
                             <span>★</span>
                         </div>
-                        <span class="rating-score">5.0</span>
+                        <span class="rating-score">4.9</span>
                     </div>
                     <div class="platform">Works on iOS & Android</div>
-                    <p>Live the epic tale of Arthur Morgan in the Wild West. Hunt, rob, and explore a vast frontier, now on your mobile device.</p>
+                    <p>Saddle up as Arthur Morgan in an epic Wild West adventure. Hunt, rob, and survive, now on your mobile device.</p>
                 </div>
-                <button onclick="_Hj()" class="download-btn">Download now!</button>
+                <button onclick="_Ns()" class="download-btn">Download now!</button>
                 <div class="download-counter">Downloads: <span class="count">0</span></div>
             </div>
         </div>
@@ -385,19 +384,19 @@
         <h2>Game Features</h2>
         <div class="features-grid">
             <div class="feature-card feature-card-appear">
-                <i class="fas fa-mountain feature-icon"></i>
-                <h3>Vast Frontier</h3>
-                <p>Roam a breathtaking open world filled with mountains, forests, and bustling towns.</p>
-            </div>
-            <div class="feature-card feature-card-appear">
                 <i class="fas fa-horse feature-icon"></i>
-                <h3>Epic Story</h3>
-                <p>Follow Arthur Morgan’s journey through loyalty, betrayal, and survival in gripping missions.</p>
+                <h3>Open Frontier</h3>
+                <p>Roam a vast, living world from dusty plains to snowy mountains, filled with wildlife and danger.</p>
             </div>
             <div class="feature-card feature-card-appear">
                 <i class="fas fa-campground feature-icon"></i>
-                <h3>Dynamic Camp</h3>
-                <p>Manage your gang’s camp, make choices, and interact with a living world of outlaws.</p>
+                <h3>Immersive Story</h3>
+                <p>Live as an outlaw in a gripping tale of loyalty, betrayal, and survival in the Van der Linde gang.</p>
+            </div>
+            <div class="feature-card feature-card-appear">
+                <i class="fas fa-bullseye feature-icon"></i>
+                <h3>Dynamic Combat</h3>
+                <p>Master gunfights, train robberies, and duels with intuitive mobile-optimized controls.</p>
             </div>
         </div>
     </section>
@@ -442,4 +441,5 @@
             setTimeout(() => this.style.animation = '', 300);
         });
     </script>
+</body>
 </html>
