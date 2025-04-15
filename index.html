@@ -98,10 +98,11 @@
             max-width: 1300px;
             width: 100%;
             animation: fadeIn 1s ease-in;
+            background: linear-gradient(180deg, rgba(139, 69, 19, 0.2), rgba(210, 180, 140, 0.1)); /* RDR 2 earthy tones */
         }
 
         .game-card {
-            background: rgba(37, 37, 37, 0.95);
+            background: rgba(50, 30, 20, 0.95); /* Dark wood-like brown */
             width: 360px;
             border-radius: 12px;
             overflow: hidden;
@@ -109,12 +110,12 @@
             display: flex;
             flex-direction: column;
             box-shadow: 0 5px 20px rgba(0, 0, 0, 0.5);
-            border: 2px solid #ff5400;
+            border: 2px solid #8b4513; /* Saddle brown border */
         }
 
         .game-card:hover {
             transform: translateY(-10px);
-            box-shadow: 0 10px 30px rgba(255, 84, 0, 0.7), 0 0 50px rgba(255, 204, 0, 0.5);
+            box-shadow: 0 10px 30px rgba(139, 69, 19, 0.7), 0 0 50px rgba(210, 180, 140, 0.5);
         }
 
         .game-card img {
@@ -140,7 +141,7 @@
 
         .game-info h2 {
             font-size: 1.8em;
-            color: #ff5400;
+            color: #d2b48c; /* Tan for RDR 2 */
             margin-bottom: 12px;
             text-transform: uppercase;
             font-weight: 600;
@@ -160,7 +161,7 @@
         }
 
         .stars span {
-            color: #ffd700;
+            color: #ffd700; /* Gold stars */
         }
 
         .stars .empty {
@@ -177,7 +178,7 @@
             font-size: 1em;
             margin-bottom: 15px;
             font-weight: 400;
-            color: #ffcc00;
+            color: #d2b48c; /* Tan */
         }
 
         .game-info p {
@@ -196,16 +197,16 @@
             font-size: 1.2em;
             color: #ffffff;
             text-transform: uppercase;
-            background: linear-gradient(45deg, #ff5400, #ff8c00);
-            border: 2px solid #ff5400;
-            box-shadow: 0 0 12px rgba(255, 84, 0, 0.7), inset 0 0 6px rgba(255, 204, 0, 0.5);
+            background: linear-gradient(45deg, #8b4513, #a0522d); /* Saddle brown to sienna */
+            border: 2px solid #8b4513;
+            box-shadow: 0 0 12px rgba(139, 69, 19, 0.7), inset 0 0 6px rgba(210, 180, 140, 0.5);
             transition: transform 0.3s ease, box-shadow 0.3s ease;
             cursor: pointer;
         }
 
         .download-btn:hover {
             transform: translateY(-3px);
-            box-shadow: 0 8px 25px rgba(255, 84, 0, 0.9);
+            box-shadow: 0 8px 25px rgba(139, 69, 19, 0.9);
         }
 
         .download-counter {
@@ -220,7 +221,7 @@
             width: 100%;
             padding: 60px 20px;
             text-align: center;
-            background: linear-gradient(180deg, rgba(255, 84, 0, 0.1), rgba(255, 204, 0, 0.05));
+            background: linear-gradient(180deg, rgba(139, 69, 19, 0.2), rgba(210, 180, 140, 0.1)); /* RDR 2 earthy tones */
             border-radius: 15px;
             position: relative;
             overflow: hidden;
@@ -233,7 +234,7 @@
             left: 0;
             width: 100%;
             height: 100%;
-            background: radial-gradient(circle at 50% 20%, rgba(255, 84, 0, 0.2), transparent 70%);
+            background: radial-gradient(circle at 50% 20%, rgba(139, 69, 19, 0.3), transparent 70%);
             z-index: 0;
             animation: pulseGlow 5s infinite ease-in-out;
         }
@@ -245,11 +246,11 @@
 
         .features-section h2 {
             font-size: 2.2em;
-            color: #ff5400;
+            color: #d2b48c; /* Tan */
             margin-bottom: 40px;
             text-transform: uppercase;
             font-weight: 800;
-            text-shadow: 0 0 10px rgba(255, 84, 0, 0.8);
+            text-shadow: 0 0 10px rgba(139, 69, 19, 0.8);
             position: relative;
             z-index: 1;
         }
@@ -263,10 +264,10 @@
         }
 
         .feature-card {
-            background: rgba(37, 37, 37, 0.9);
+            background: rgba(50, 30, 20, 0.9); /* Dark wood-like brown */
             padding: 25px;
             border-radius: 12px;
-            border: 2px solid #ff5400;
+            border: 2px solid #8b4513; /* Saddle brown */
             transition: transform 0.4s ease, box-shadow 0.4s ease;
             position: relative;
             backdrop-filter: blur(5px);
@@ -278,14 +279,14 @@
 
         .feature-card:hover {
             transform: translateY(-10px);
-            box-shadow: 0 10px 30px rgba(255, 84, 0, 0.7), 0 0 40px rgba(255, 204, 0, 0.4);
+            box-shadow: 0 10px 30px rgba(139, 69, 19, 0.7), 0 0 40px rgba(210, 180, 140, 0.4);
         }
 
         .feature-icon {
             font-size: 2.5em;
-            color: #ffcc00;
+            color: #d2b48c; /* Tan */
             margin-bottom: 15px;
-            filter: drop-shadow(0 0 5px rgba(255, 84, 0, 0.5));
+            filter: drop-shadow(0 0 5px rgba(139, 69, 19, 0.5));
             transition: transform 0.3s ease;
         }
 
@@ -295,10 +296,10 @@
 
         .feature-card h3 {
             font-size: 1.5em;
-            color: #ffcc00;
+            color: #d2b48c; /* Tan */
             margin-bottom: 10px;
             font-weight: 600;
-            text-shadow: 0 0 5px rgba(255, 204, 0, 0.5);
+            text-shadow: 0 0 5px rgba(210, 180, 140, 0.5);
         }
 
         .feature-card p {
